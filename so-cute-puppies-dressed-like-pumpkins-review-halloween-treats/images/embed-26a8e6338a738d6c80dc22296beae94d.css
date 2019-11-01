@@ -1,0 +1,783 @@
+/* line 1, /app/app/assets/stylesheets/embed.css.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 2, /app/app/assets/stylesheets/embed.css.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* line 3, /app/app/assets/stylesheets/embed.css.scss */
+audio {
+  display: none;
+}
+
+/* line 5, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .simplecast-player,
+.simplecast-player-light .simplecast-player,
+.media-container .simplecast-player {
+  width: 100%;
+  height: 36px;
+  background: #bbb;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 3px;
+  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: #fff;
+}
+/* line 14, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .simplecast-player a,
+.simplecast-player-light .simplecast-player a,
+.media-container .simplecast-player a {
+  outline: 0;
+}
+/* line 18, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .simplecast-player .svg,
+.simplecast-player-light .simplecast-player .svg,
+.media-container .simplecast-player .svg {
+  display: block;
+}
+/* line 22, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .simplecast-player .svg path,
+.simplecast-player-light .simplecast-player .svg path,
+.media-container .simplecast-player .svg path {
+  fill: #fff !important;
+}
+/* line 31, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface,
+.simplecast-player-light .jp-audio .jp-interface,
+.media-container .jp-audio .jp-interface {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+/* line 36, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-gui-item,
+.simplecast-player-light .jp-audio .jp-interface .jp-gui-item,
+.media-container .jp-audio .jp-interface .jp-gui-item {
+  display: table-cell;
+  vertical-align: top;
+  height: 36px;
+}
+/* line 44, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-play-controls,
+.simplecast-player-light .jp-audio .jp-interface .jp-play-controls,
+.media-container .jp-audio .jp-interface .jp-play-controls {
+  width: 36px;
+}
+/* line 46, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-play-controls a,
+.simplecast-player-light .jp-audio .jp-interface .jp-play-controls a,
+.media-container .jp-audio .jp-interface .jp-play-controls a {
+  outline: 0;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+/* line 57, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-play-controls a.jp-play img, .simplecast-player-dark .jp-audio .jp-interface .jp-play-controls a.jp-pause img,
+.simplecast-player-light .jp-audio .jp-interface .jp-play-controls a.jp-play img,
+.simplecast-player-light .jp-audio .jp-interface .jp-play-controls a.jp-pause img,
+.media-container .jp-audio .jp-interface .jp-play-controls a.jp-play img,
+.media-container .jp-audio .jp-interface .jp-play-controls a.jp-pause img {
+  display: none;
+}
+/* line 58, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-play-controls a.jp-play svg, .simplecast-player-dark .jp-audio .jp-interface .jp-play-controls a.jp-pause svg,
+.simplecast-player-light .jp-audio .jp-interface .jp-play-controls a.jp-play svg,
+.simplecast-player-light .jp-audio .jp-interface .jp-play-controls a.jp-pause svg,
+.media-container .jp-audio .jp-interface .jp-play-controls a.jp-play svg,
+.media-container .jp-audio .jp-interface .jp-play-controls a.jp-pause svg {
+  margin-top: 9px;
+  height: 18px;
+  width: 18px;
+}
+/* line 63, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-play-controls a.jp-play svg.svg, .simplecast-player-dark .jp-audio .jp-interface .jp-play-controls a.jp-pause svg.svg,
+.simplecast-player-light .jp-audio .jp-interface .jp-play-controls a.jp-play svg.svg,
+.simplecast-player-light .jp-audio .jp-interface .jp-play-controls a.jp-pause svg.svg,
+.media-container .jp-audio .jp-interface .jp-play-controls a.jp-play svg.svg,
+.media-container .jp-audio .jp-interface .jp-play-controls a.jp-pause svg.svg {
+  display: inline-block;
+}
+/* line 68, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-rewind,
+.simplecast-player-light .jp-audio .jp-interface .jp-rewind,
+.media-container .jp-audio .jp-interface .jp-rewind {
+  width: 16px;
+}
+/* line 71, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .main-player-rewind,
+.simplecast-player-light .jp-audio .jp-interface .main-player-rewind,
+.media-container .jp-audio .jp-interface .main-player-rewind {
+  margin-top: 12px;
+  margin-left: 3px;
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+/* line 80, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .main-player-rewind img,
+.simplecast-player-light .jp-audio .jp-interface .main-player-rewind img,
+.media-container .jp-audio .jp-interface .main-player-rewind img {
+  display: none;
+}
+/* line 82, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .main-player-rewind svg,
+.simplecast-player-light .jp-audio .jp-interface .main-player-rewind svg,
+.media-container .jp-audio .jp-interface .main-player-rewind svg {
+  height: 12px;
+  width: 12px;
+}
+/* line 88, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-volume-controls,
+.simplecast-player-light .jp-audio .jp-interface .jp-volume-controls,
+.media-container .jp-audio .jp-interface .jp-volume-controls {
+  width: 14px;
+  padding-left: 2px;
+}
+/* line 92, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-volume-controls a,
+.simplecast-player-light .jp-audio .jp-interface .jp-volume-controls a,
+.media-container .jp-audio .jp-interface .jp-volume-controls a {
+  margin-top: 12px;
+  outline: 0;
+  display: block;
+  width: 17px;
+  height: 11px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+/* line 101, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-volume-controls a.jp-mute, .simplecast-player-dark .jp-audio .jp-interface .jp-volume-controls a.jp-unmute,
+.simplecast-player-light .jp-audio .jp-interface .jp-volume-controls a.jp-mute,
+.simplecast-player-light .jp-audio .jp-interface .jp-volume-controls a.jp-unmute,
+.media-container .jp-audio .jp-interface .jp-volume-controls a.jp-mute,
+.media-container .jp-audio .jp-interface .jp-volume-controls a.jp-unmute {
+  text-align: left;
+}
+/* line 104, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-volume-controls a.jp-mute img, .simplecast-player-dark .jp-audio .jp-interface .jp-volume-controls a.jp-unmute img,
+.simplecast-player-light .jp-audio .jp-interface .jp-volume-controls a.jp-mute img,
+.simplecast-player-light .jp-audio .jp-interface .jp-volume-controls a.jp-unmute img,
+.media-container .jp-audio .jp-interface .jp-volume-controls a.jp-mute img,
+.media-container .jp-audio .jp-interface .jp-volume-controls a.jp-unmute img {
+  display: none;
+}
+/* line 106, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-volume-controls a.jp-mute svg, .simplecast-player-dark .jp-audio .jp-interface .jp-volume-controls a.jp-unmute svg,
+.simplecast-player-light .jp-audio .jp-interface .jp-volume-controls a.jp-mute svg,
+.simplecast-player-light .jp-audio .jp-interface .jp-volume-controls a.jp-unmute svg,
+.media-container .jp-audio .jp-interface .jp-volume-controls a.jp-mute svg,
+.media-container .jp-audio .jp-interface .jp-volume-controls a.jp-unmute svg {
+  height: 100%;
+}
+/* line 113, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-time,
+.simplecast-player-light .jp-audio .jp-interface .jp-time,
+.media-container .jp-audio .jp-interface .jp-time {
+  width: 60px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 11px;
+}
+/* line 120, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-progress,
+.simplecast-player-light .jp-audio .jp-interface .jp-progress,
+.media-container .jp-audio .jp-interface .jp-progress {
+  margin-top: 15px;
+  width: 100%;
+  height: 6px;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 127, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-progress .jp-seek-bar,
+.simplecast-player-light .jp-audio .jp-interface .jp-progress .jp-seek-bar,
+.media-container .jp-audio .jp-interface .jp-progress .jp-seek-bar {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+}
+/* line 132, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-progress .jp-play-bar,
+.simplecast-player-light .jp-audio .jp-interface .jp-progress .jp-play-bar,
+.media-container .jp-audio .jp-interface .jp-progress .jp-play-bar {
+  background: #fff;
+  height: 6px;
+  width: 0%;
+}
+/* line 139, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-dark .jp-audio .jp-interface .jp-player-speed,
+.simplecast-player-light .jp-audio .jp-interface .jp-player-speed,
+.media-container .jp-audio .jp-interface .jp-player-speed {
+  width: 34px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+/* line 151, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-light .jp-audio {
+  background: #eee;
+  background: rgba(255, 255, 255, 0.7);
+  color: #111;
+}
+/* line 156, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-light .jp-audio .svg path {
+  fill: #111 !important;
+}
+/* line 161, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-light .jp-audio .jp-interface .jp-progress {
+  background: #ccc;
+  background: rgba(0, 0, 0, 0.55);
+}
+/* line 165, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-player-light .jp-audio .jp-interface .jp-progress .jp-play-bar {
+  background: #111;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 178, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.mobile .simplecast-player-light .jp-audio .jp-rewind, .mobile .simplecast-player-light .jp-audio .jp-volume-controls, .mobile .simplecast-player-light .jp-audio .jp-player-speed, .mobile .simplecast-player-light .jp-audio.simplecast-player-simple .jp-rewind, .mobile .simplecast-player-light .jp-audio.simplecast-player-simple .jp-volume-controls, .mobile .simplecast-player-light .jp-audio.simplecast-player-simple .jp-player-speed,
+.mobile .simplecast-player-dark .jp-audio .jp-rewind,
+.mobile .simplecast-player-dark .jp-audio .jp-volume-controls,
+.mobile .simplecast-player-dark .jp-audio .jp-player-speed,
+.mobile .simplecast-player-dark .jp-audio.simplecast-player-simple .jp-rewind,
+.mobile .simplecast-player-dark .jp-audio.simplecast-player-simple .jp-volume-controls,
+.mobile .simplecast-player-dark .jp-audio.simplecast-player-simple .jp-player-speed {
+  display: none;
+}
+
+/* line 182, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player {
+  height: 80px;
+  display: table;
+}
+/* line 186, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .artwork {
+  display: table-cell;
+  height: 80px;
+  width: 80px;
+  vertical-align: top;
+}
+/* line 192, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .simplecast-player {
+  display: table-cell;
+  border-radius: 0;
+  height: 80px;
+  vertical-align: top;
+  background: #333;
+}
+/* line 200, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface .jp-gui-item {
+  height: 80px;
+  display: block;
+}
+/* line 202, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface .jp-gui-item.jp-rewind, .simplecast-card-player .jp-audio .jp-interface .jp-gui-item.jp-volume-controls, .simplecast-card-player .jp-audio .jp-interface .jp-gui-item.jp-player-speed, .simplecast-card-player .jp-audio .jp-interface .jp-gui-item.jp-current-time {
+  display: none;
+}
+/* line 205, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface {
+  display: block;
+  position: relative;
+}
+/* line 209, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface .jp-play-controls {
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+}
+/* line 217, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface .jp-play-controls a {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+}
+/* line 224, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface .jp-play-controls a.jp-play svg, .simplecast-card-player .jp-audio .jp-interface .jp-play-controls a.jp-pause svg {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 36px;
+  width: 36px;
+}
+/* line 234, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface .jp-duration {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  margin: 28px 0 0 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  height: 24px;
+  width: 110px;
+}
+/* line 248, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface .jp-progress {
+  z-index: 1;
+  margin-top: 0;
+  height: 80px;
+  background: #222;
+}
+/* line 254, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface .jp-progress .jp-seek-bar {
+  width: 100%;
+  height: 80px;
+  cursor: pointer;
+}
+/* line 259, /app/app/assets/stylesheets/embeds/_old_player.scss */
+.simplecast-card-player .jp-audio .jp-interface .jp-progress .jp-play-bar {
+  background: #464646;
+  height: 80px;
+  width: 0%;
+}
+
+/* line 1, /app/app/assets/stylesheets/embeds/_shared.scss */
+.embed-large, .embed-medium {
+  font-family: "Source Sans Pro", "Helvetica Neue", arial, sans-serif;
+}
+
+/* line 3, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large {
+  height: 330px;
+  border-radius: 6px;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+/* line 13, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-itunes-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 132px;
+  height: 40px;
+}
+/* line 21, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-overlay {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, transparent 33%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.75) 100%);
+}
+/* line 32, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 5;
+}
+/* line 40, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-content .embed-large-show-info {
+  display: flex;
+  align-items: center;
+}
+/* line 44, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-content .embed-large-show-info .episode-large-meta-data {
+  flex: 1;
+}
+/* line 47, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-content .embed-large-show-info .episode-large-meta-data .podcast-title {
+  color: #CACACA;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+/* line 54, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-content .embed-large-show-info .episode-large-meta-data .episode-title {
+  font-size: 1.5em;
+}
+/* line 59, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-content .embed-large-show-info .embed-actions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 64, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-content .embed-large-show-info .embed-actions li {
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  background-size: 32px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 12px;
+}
+/* line 73, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-content .embed-large-show-info .embed-actions li a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+/* line 79, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large .embed-large-content .embed-large-show-info .embed-actions li.donate-li {
+  background-image: url(/assets/embeds/donate-icon-dark.svg);
+}
+
+/* line 88, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large-controls {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 91, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large-controls .jp-audio.simplecast-player {
+  display: block;
+  width: 100%;
+}
+/* line 95, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large-controls .jp-audio.simplecast-player .jp-gui {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  height: 36px;
+}
+/* line 100, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls {
+  margin-right: 8px;
+}
+/* line 103, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-play,
+.embed-large-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-pause {
+  display: block;
+  height: 16px;
+}
+/* line 108, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-play svg,
+.embed-large-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-pause svg {
+  height: 16px;
+  width: 16px;
+  fill: #fff;
+}
+/* line 116, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 8px;
+  position: relative;
+  background: #D5D5D5;
+}
+/* line 124, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar .jp-seek-bar {
+  position: absolute;
+  height: 8px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 132, /app/app/assets/stylesheets/embeds/_large.scss */
+.embed-large-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar .jp-play-bar {
+  position: absolute;
+  height: 8px;
+  border-radius: 4px;
+  left: 0;
+  top: 0;
+  min-width: 8px;
+  background: #6F6D70;
+}
+
+/* line 1, /app/app/assets/stylesheets/embeds/_shared.scss */
+.embed-large, .embed-medium {
+  font-family: "Source Sans Pro", "Helvetica Neue", arial, sans-serif;
+}
+
+/* line 3, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 94px;
+  width: 100%;
+  padding: 12px;
+  position: relative;
+  border-radius: 6px;
+}
+/* line 12, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium .embed-medium-show-info-title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 16, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium .episode-title,
+.embed-medium .podcast-title {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  width: 0;
+  white-space: nowrap;
+}
+/* line 27, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium .podcast-title {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+/* line 32, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium .embed-medium-itunes-link {
+  position: absolute;
+  display: block;
+  top: 6px;
+  right: 6px;
+  padding: 0px 5px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+/* line 46, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-image {
+  min-width: 70px;
+  width: 70px;
+  height: 70px;
+  margin-right: 12px;
+  position: absolute;
+}
+/* line 53, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 59, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-content {
+  padding-left: 82px;
+  width: 100%;
+}
+
+/* line 64, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 67, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .jp-audio.simplecast-player {
+  display: block;
+  width: 100%;
+}
+/* line 71, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .jp-audio.simplecast-player .jp-gui {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  height: 36px;
+}
+/* line 76, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls {
+  margin-right: 8px;
+}
+/* line 79, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-play,
+.embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-pause {
+  display: block;
+  height: 16px;
+}
+/* line 84, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-play svg,
+.embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-pause svg {
+  height: 16px;
+  width: 16px;
+}
+/* line 91, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 8px;
+  position: relative;
+}
+/* line 98, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar .jp-seek-bar {
+  position: absolute;
+  height: 8px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 106, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar .jp-play-bar {
+  position: absolute;
+  height: 8px;
+  border-radius: 4px;
+  left: 0;
+  top: 0;
+  min-width: 8px;
+}
+/* line 118, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .embed-actions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 123, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .embed-actions li {
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  background-size: 32px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 12px;
+}
+/* line 132, /app/app/assets/stylesheets/embeds/_medium.scss */
+.embed-medium-controls .embed-actions li a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* line 146, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-light .embed-medium {
+  color: #4A4A4A;
+  background: #fff;
+}
+/* line 150, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-light .embed-medium .podcast-title {
+  color: #CACACA;
+}
+/* line 154, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-light .embed-medium .embed-medium-itunes-link {
+  background: #000;
+  color: #fff;
+  border: 1px solid #B1B3B6;
+}
+/* line 169, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-light .embed-medium .embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-play svg,
+.simplecast-player-medium-light .embed-medium .embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-pause svg {
+  fill: #4A4A4A;
+}
+/* line 175, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-light .embed-medium .embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar {
+  background: #D5D5D5;
+}
+/* line 178, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-light .embed-medium .embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar .jp-play-bar {
+  background: #4A4A4A;
+}
+/* line 184, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-light .embed-medium .embed-medium-controls .embed-actions li.donate-li {
+  background-image: url(/assets/embeds/donate-icon-light.svg);
+}
+
+/* line 194, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-dark .embed-medium {
+  color: #fff;
+  background: #4A4A4A;
+}
+/* line 198, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-dark .embed-medium .embed-medium-image {
+  border: 1px solid #979797;
+}
+/* line 202, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-dark .embed-medium .podcast-title {
+  color: #979797;
+}
+/* line 206, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-dark .embed-medium .embed-medium-itunes-link {
+  background: #000;
+  color: #fff;
+  border: 1px solid #B1B3B6;
+}
+/* line 221, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-dark .embed-medium .embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-play svg,
+.simplecast-player-medium-dark .embed-medium .embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-play-controls .jp-pause svg {
+  fill: #fff;
+}
+/* line 227, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-dark .embed-medium .embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar {
+  background: #000;
+}
+/* line 230, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-dark .embed-medium .embed-medium-controls .jp-audio.simplecast-player .jp-gui .jp-progress-bar .jp-play-bar {
+  background: #fff;
+}
+/* line 236, /app/app/assets/stylesheets/embeds/_medium.scss */
+.simplecast-player-medium-dark .embed-medium .embed-medium-controls .embed-actions li.donate-li {
+  background-image: url(/assets/embeds/donate-icon-dark.svg);
+}
